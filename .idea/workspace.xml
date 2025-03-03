@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="949362fd-7c36-4ab5-be4d-4c3ddfee4471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FormsProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/about_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/add_fanlar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/add_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/get_fanlar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configapp/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configapp/templates/update_student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/configapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/configapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/configapp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/configapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/configapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AkbarxonFayzullayev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AkbarxonFayzullayev/forms.git&quot;,
+    &quot;accountId&quot;: &quot;0dbb9c00-7e27-4932-9820-731819e00e60&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -50,7 +55,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>

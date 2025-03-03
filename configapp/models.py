@@ -8,7 +8,7 @@ class Fanlar(models.Model):
 
 class Student(models.Model):
     fullname = models.CharField(max_length=150)
-    phone = models.IntegerField()
+    phone = models.TextField()
     location = models.TextField(max_length=150)
     fan = models.ForeignKey(Fanlar,on_delete=models.CASCADE)
 

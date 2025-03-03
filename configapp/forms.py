@@ -1,7 +1,7 @@
 from django import forms
 from .models import Fanlar,Student
 
-class StudentForm(forms.Form):
+class StudentForm(forms.ModelForm):
     fullname = forms.CharField(max_length=150,
         label='Sarlavha kiriting ',
         widget=forms.TextInput(attrs={"class":'form-control'}))
@@ -14,6 +14,12 @@ class StudentForm(forms.Form):
     fan = forms.ModelChoiceField(empty_label='Kategoriyani tanlang',
         label='Kategoriya',queryset=Fanlar.objects.all(),
         widget=forms.Select(attrs={"class":'form-control'}))
+
+    class Meta:
+        model = Student
+        fields = ['fullname', 'phone', 'location','fan']
+
+
 class FanlarForm(forms.Form):
     model = Fanlar
     title = forms.CharField(max_length=140,label='Sarlavha kiriting ',

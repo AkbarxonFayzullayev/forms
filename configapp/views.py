@@ -1,5 +1,5 @@
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
+# from django.http import HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404
 from reportlab.lib.utils import ImageReader
 
 from .forms import *
@@ -56,7 +56,7 @@ def add_student(request):
         form = StudentForm()
     return render(request, "add_student.html", {"form": form,"qr_code":qr_code},)
 def generate_pdf(request, student_id, ):
-    student = Student.objects.get(id=student_id)
+    student = get_object_or_404(Student,id=student_id)
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = f'attachment; filename="{student.fullname}.pdf"'
 
@@ -74,3 +74,15 @@ def generate_pdf(request, student_id, ):
     p.save()
 
     return response
+def update_student(request,student_id):
+    print(request)
+    student = get_object_or_404(Student,id=student_id)
+    qr_code = generate_qr_code("https://t.me/najottalim")
+    if request.method == "POST":
+        form = StudentForm(request.POST,instance=student)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = StudentForm(instance=student)
+    return render(request, "update_student.html", {"form": form, "qr_code": qr_code,"student" : student}, )
